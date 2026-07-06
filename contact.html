@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Meghyra</title>
+<meta name="description" content="Get in touch with Meghyra for personal orders, gifting, or wholesale partnerships.">
+<link rel="stylesheet" href="./style.css">
+<link rel="icon" href="./assets/logo.webp" type="image/png">
+<script>
+  if (localStorage.getItem('theme') === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+</script>
+</head>
+<body>
+
+<header class="site-nav" id="siteNav">
+  <div class="wrap-wide nav-inner">
+    <a href="./index.html" class="wordmark"><span class="word">MEGHYRA</span><span class="dot"></span></a>
+    <nav class="nav-links">
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About Us</a>
+      <a href="./products.html">Products</a>
+      <a href="./contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggleBtn" aria-label="Toggle dark mode" style="color:var(--ink);">
+        <svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <a href="contact.html" class="btn btn-solid" style="padding:11px 22px;">Get in Touch</a>
+      <button class="burger" id="burgerBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-drawer" id="mobileDrawer">
+  <span class="close">Close ✕</span>
+  <a href="./index.html">Home</a>
+  <a href="./about.html">About Us</a>
+  <a href="./products.html">Products</a>
+  <a href="./contact.html">Contact</a>
+</div>
+
+<!-- ================= PAGE BANNER ================= -->
+<section class="page-banner" style="position:relative; overflow:hidden; padding-bottom:100px;">
+  <div style="position:absolute; inset:0; z-index:1;">
+    <img src="./assets/contact_hills.webp" alt="Misty Path in Meghalaya" style="width:100%; height:100%; object-fit:cover; object-position:center;">
+    <div style="position:absolute; inset:0; background:linear-gradient(to right, #0a0a0a 0%, rgba(10,10,10,0.6) 60%, rgba(10,10,10,0.2) 100%);"></div>
+    <div style="position:absolute; inset:0; background:linear-gradient(to bottom, rgba(10,10,10,0.3) 0%, transparent 60%, var(--paper) 100%);"></div>
+  </div>
+  <div class="wrap" style="position:relative; z-index:2; text-align:center; display:flex; flex-direction:column; align-items:center;">
+    <span class="eyebrow reveal" style="text-shadow:0 4px 10px rgba(0,0,0,0.6);; color:var(--brass);">Get in Touch</span>
+    <h1 class="reveal" style="font-size:clamp(3rem, 7vw, 5.2rem); font-weight:500; line-height:1.1; margin-top:16px; max-width:16ch; text-shadow:0 10px 40px rgba(0,0,0,0.9); color:#f8f5ee; text-transform: capitalize;">Let's get you something good.</h1>
+    <p class="lede reveal" style="margin-top:20px; max-width:56ch; color:rgba(248,245,238,0.85); text-shadow:0 2px 10px rgba(0,0,0,0.6);">Reach out on WhatsApp — our team replies personally, always. Whether it's one jar or a gifting order, we'll help you sort it.</p>
+    <div class="reveal" style="margin-top:32px;">
+      <a href="https://wa.me/916909424621?text=Hi%21%20I%27d%20like%20to%20know%20more%20about%20Meghyra." target="_blank" rel="noopener" class="btn btn-solid">Message Us on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REASONS ================= -->
+<section class="section-tight bg-tint">
+  <div class="wrap">
+    <div class="reason-grid reveal">
+      <div class="reason-card">
+        <h3>Personal Orders</h3>
+        <p>Looking for honey, spice, or grain for your own kitchen. We'll help you pick what suits your taste.</p>
+        <a class="link-arrow" href="https://wa.me/916909424621?text=Hi%21%20I%27d%20like%20to%20place%20a%20personal%20order." target="_blank" rel="noopener">Start an Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="reason-card">
+        <h3>Gifting &amp; Hampers</h3>
+        <p>Sending something thoughtful for a festival, wedding, or corporate occasion.</p>
+        <a class="link-arrow" href="https://wa.me/916909424621?text=Hi%21%20I%27d%20like%20to%20enquire%20about%20gifting%20and%20hampers." target="_blank" rel="noopener">Enquire About Gifting <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="reason-card">
+        <h3>Wholesale &amp; Partnerships</h3>
+        <p>Sourcing in bulk for a store, café, or export enquiry.</p>
+        <a class="link-arrow" href="https://wa.me/916909424621?text=Hi%21%20I%27d%20like%20to%20discuss%20a%20wholesale%20partnership." target="_blank" rel="noopener">Discuss Wholesale <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INFO SPLIT ================= -->
+<section class="section">
+  <div class="wrap info-split">
+    <div class="reveal">
+      <span class="eyebrow">Direct Contact</span>
+      <h2 style="margin-top:14px; font-size:var(--fs-h3);">However you'd like to reach us.</h2>
+      <div class="info-block" style="border-top:none; padding-top:30px;">
+        <div class="k">WhatsApp</div>
+        <div class="v"><a href="https://wa.me/916909424621" target="_blank" rel="noopener">+91 69094 24621</a></div>
+      </div>
+      <div class="info-block">
+        <div class="k">Instagram</div>
+        <div class="v"><a href="https://www.instagram.com/meghyra_" target="_blank" rel="noopener">@meghyra_</a></div>
+      </div>
+      <div class="info-block">
+        <div class="k">Based In</div>
+        <div class="v">Meghalaya, India</div>
+      </div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Response Time</span>
+      <h2 style="margin-top:14px; font-size:var(--fs-h3);">We reply personally, always.</h2>
+      <p style="font-size:15px; color:var(--ink-70); line-height:1.8; margin-top:18px; max-width:46ch;">Every message is answered by someone on our small team — never an automated line. Expect a reply within the same day, and a little longer during festival season when the hills are busiest.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="wordmark"><span class="word">MEGHYRA</span><span class="dot"></span></span>
+        <p>Raw luxury from the North East — pure ingredients, honestly kept.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="./products.html">Products</a>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <a href="./products.html#honey">Honey</a>
+        <a href="./products.html#spices">Spices &amp; Herbs</a>
+        <a href="./products.html#seeds">Seeds &amp; Nuts</a>
+        <a href="./products.html#grains">Grains &amp; Rice</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="https://wa.me/916909424621" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/meghyra_" target="_blank" rel="noopener">Instagram</a>
+        <a href="./contact.html">Get in Touch</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Meghyra © 2026. Crafted in the hills of Meghalaya.</span>
+      <span>All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products — Meghyra</title>
+<meta name="description" content="Raw honey, native spices, heirloom seeds and grains from the hills of Meghalaya.">
+<link rel="stylesheet" href="./style.css">
+<link rel="icon" href="./assets/logo.webp" type="image/png">
+<script>
+  if (localStorage.getItem('theme') === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+</script>
+</head>
+<body>
+
+<header class="site-nav" id="siteNav">
+  <div class="wrap-wide nav-inner">
+    <a href="./index.html" class="wordmark"><span class="word">MEGHYRA</span><span class="dot"></span></a>
+    <nav class="nav-links">
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About Us</a>
+      <a href="./products.html" class="active">Products</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggleBtn" aria-label="Toggle dark mode" style="color:var(--ink);">
+        <svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <a href="./contact.html" class="btn btn-solid" style="padding:11px 22px;">Get in Touch</a>
+      <button class="burger" id="burgerBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-drawer" id="mobileDrawer">
+  <span class="close">Close ✕</span>
+  <a href="./index.html">Home</a>
+  <a href="./about.html">About Us</a>
+  <a href="./products.html">Products</a>
+  <a href="./contact.html">Contact</a>
+</div>
+
+<!-- ================= PAGE BANNER ================= -->
+<section class="page-banner" style="position:relative; overflow:hidden; padding-bottom:100px;">
+  <div style="position:absolute; inset:0; z-index:1;">
+    <img src="./assets/products_hills.webp" alt="Terraced Farming in Meghalaya" style="width:100%; height:100%; object-fit:cover; object-position:center;">
+    <div style="position:absolute; inset:0; background:linear-gradient(to right, #0a0a0a 0%, rgba(10,10,10,0.6) 60%, rgba(10,10,10,0.2) 100%);"></div>
+    <div style="position:absolute; inset:0; background:linear-gradient(to bottom, rgba(10,10,10,0.3) 0%, transparent 60%, var(--paper) 100%);"></div>
+  </div>
+  <div class="wrap" style="position:relative; z-index:2; text-align:center; display:flex; flex-direction:column; align-items:center;">
+    <span class="eyebrow reveal" style="text-shadow:0 4px 10px rgba(0,0,0,0.6);; color:var(--brass);">The Full Collection</span>
+    <h1 class="reveal" style="font-size:clamp(3rem, 7vw, 5.2rem); font-weight:500; line-height:1.1; margin-top:16px; max-width:16ch; text-shadow:0 10px 40px rgba(0,0,0,0.9); color:#f8f5ee; text-transform: capitalize;">Everything the hills provide.</h1>
+    <p class="lede reveal" style="margin-top:20px; max-width:56ch; color:rgba(248,245,238,0.85); text-shadow:0 2px 10px rgba(0,0,0,0.6);">Every item is sourced in small, seasonal batches directly from farming families across Meghalaya. Prices reflect the size of the harvest, not a markup.</p>
+  </div>
+</section>
+
+<!-- ================= CATEGORY NAV ================= -->
+<nav class="cat-nav wrap">
+  <a href="#honey">Honey</a>
+  <a href="#spices">Spices &amp; Herbs</a>
+  <a href="#seeds">Seeds &amp; Nuts</a>
+  <a href="#grains">Grains &amp; Rice</a>
+  <a href="#gifting">Gift Sets</a>
+</nav>
+
+<div class="wrap">
+
+  <!-- ================= HONEY ================= -->
+  <div id="honey">
+    <div class="cat-heading reveal">
+      <h2>Honey</h2>
+      <span class="rule"></span>
+      <span class="count">5 Varieties</span>
+    </div>
+    <div class="product-grid reveal">
+
+      <div class="product-card">
+        <div class="figure figure-frame linework"><svg viewBox="0 0 100 100" fill="none"><path d="M35 30 H65 V38 C65 40 68 42 68 46 V80 C68 85 63 88 58 88 H42 C37 88 32 85 32 80 V46 C32 42 35 40 35 38 Z" stroke="currentColor" stroke-width="1"/><path d="M35 48 H65" stroke="currentColor" stroke-width="1"/><path d="M50 55 C 46 60 46 66 50 70 C 54 66 54 60 50 55 Z" stroke="currentColor" stroke-width="1"/></svg></div>
+        <div class="product-card-content">
+          <div class="title-row">
+            <h3>Ryndia Royale</h3>
+            <span class="price"><span class="old">₹4,500</span>₹3,500</span>
+          </div>
+          <p class="desc">Raw multiflora honey, drawn from wild hives deep in the forest belt.</p>
+          <a class="btn-full" href="https://wa.me/916909424621?text=Hi%21%20I%27m%20interested%20in%20Ryndia%20Royale." target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="figure figure-frame linework"><svg viewBox="0 0 100 100" fill="none"><path d="M35 30 H65 V38 C65 40 68 42 68 46 V80 C68 85 63 88 58 88 H42 C37 88 32 85 32 80 V46 C32 42 35 40 35 38 Z" stroke="currentColor" stroke-width="1"/><path d="M35 48 H65" stroke="currentColor" stroke-width="1"/><path d="M50 55 C 46 60 46 66 50 70 C 54 66 54 60 50 55 Z" stroke="currentColor" stroke-width="1"/></svg></div>
+        <div class="product-card-content">
+          <div class="title-row">
+            <h3>Sohra Cliffcomb</h3>
+            <span class="price">₹5,200</span>
+          </div>
+          <p class="desc">A rare cliff-forest honey, hand-harvested once a year in limited quantity.</p>
+          <a class="btn-full" href="https://wa.me/916909424621?text=Hi%21%20I%27m%20interested%20in%20Sohra%20Cliffcomb." target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="figure figure-frame linework"><svg viewBox="0 0 100 100" fill="none"><path d="M35 30 H65 V38 C65 40 68 42 68 46 V80 C68 85 63 88 58 88 H42 C37 88 32 85 32 80 V46 C32 42 35 40 35 38 Z" stroke="currentColor" stroke-width="1"/><path d="M35 48 H65" stroke="currentColor" stroke-width="1"/><path d="M50 55 C 46 60 46 66 50 70 C 54 66 54 60 50 55 Z" stroke="currentColor" stroke-width="1"/></svg></div>
+        <div class="product-card-content">
+          <div class="title-row">
+            <h3>Khasi Hills Raw</h3>
+            <span class="price">₹2,200</span>
+          </div>
+          <p class="desc">Our most accessible honey, unheated and unfiltered for daily use.</p>
+          <a class="btn-full" href="https://wa.me/916909424621?text=Hi%21%20I%27m%20interested%20in%20Khasi%20Hills%20Raw." target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="figure figure-frame linework"><svg viewBox="0 0 100 100" fill="none"><path d="M35 30 H65 V38 C65 40 68 42 68 46 V80 C68 85 63 88 58 88 H42 C37 88 32 85 32 80 V46 C32 42 35 40 35 38 Z" stroke="currentColor" stroke-width="1"/><path d="M35 48 H65" stroke="currentColor" stroke-width="1"/><path d="M50 55 C 46 60 46 66 50 70 C 54 66 54 60 50 55 Z" stroke="currentColor" stroke-width="1"/></svg></div>
+        <div class="product-card-content">
+          <div class="title-row">
+            <h3>Wild Litchi Blossom</h3>
+            <span class="price">₹3,000</span>
+          </div>
+          <p class="desc">A delicate, floral honey collected only during the short litchi bloom.</p>
+          <a class="btn-full" href="https://wa.me/916909424621?text=Hi%21%20I%27m%20interested%20in%20Wild%20Litchi%20Blossom." target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="figure figure-frame linework"><svg viewBox="0 0 100 100" fill="none"><path d="M35 30 H65 V38 C65 40 68 42 68 46 V80 C68 85 63 88 58 88 H42 C37 88 32 85 32 80 V46 C32 42 35 40 35 38 Z" stroke="currentColor" stroke-width="1"/><path d="M35 48 H65" stroke="currentColor" stroke-width="1"/><path d="M50 55 C 46 60 46 66 50 70 C 54 66 54 60 50 55 Z" stroke="currentColor" stroke-width="1"/></svg></div>
+        <div class="product-card-content">
+          <div class="title-row">
+            <h3>Sohiong Berry Honey</h3>
+            <span class="price">₹2,800</span>
+          </div>
+          <p class="desc">Raw honey slow-infused with native Khasi hill berries.</p>
+          <a class="btn-full" href="https://wa.me/916909424621?text=Hi%21%20I%27m%20interested%20in%20Sohiong%20Berry%20Honey." target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= SPICES ================= -->
+  <div id="spices">
+    <div class="cat-heading reveal">
+      <h2>Spices &amp; Herbs</h2>
+      <span class="rule"></span>
+      <span class="count">10 Varieties</span>
+    </div>
+    <div class="product-grid reveal">
+
+      <div class="product-card">
+        <div class="figure figure-frame linework"><svg viewBox="0 0 100 100" fill="none"><path d="M50 85 C 50 60 42 45 30 30" stroke="currentColor" stroke-width="1"/><path d="M50 85 C 50 60 58 45 70 30" stroke="currentColor" stroke-width="1"/><path d="M40 55 C 44 50 50 50 52 56" stroke="currentColor" stroke-width="1"/><path d="M58 45 C 62 40 68 40 70 46" stroke="currentColor" stroke-width="1"/><circle cx="30" cy="28" r="3" stroke="currentColor" stroke-width="1"/><circle cx="70" cy="28" r="3" stroke="currentColor" stroke-width="1"/></svg></div>
+        <div class="product-card-content">
+          <div class="title-row">
+            <h3>Lakadong Turmeric</h3>
+            <span class="price">₹650</span>
+          </div>
+          <p class="desc">Stone-ground from Meghalaya's celebrated high-curcumin turmeric.</p>
+          <a class="btn-full" href="https://wa.me/916909424621?text=Hi%21%20I%27m%20interested%20in%20Lakadong%20Turmeric." target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="figure figure-frame linework"><svg viewBox="0 0 100 100" fill="none"><path d="M50 85 C 50 60 42 45 30 30" stroke="currentColor" stroke-width="1"/><path d="M50 85 C 50 60 58 45 70 30" stroke="currentColor" stroke-width="1"/><path d="M40 55 C 44 50 50 50 52 56" stroke="currentColor" stroke-width="1"/><path d="M58 45 C 62 40 68 40 70 46" stroke="currentColor" stroke-width="1"/><circle cx="30" cy="28" r="3" stroke="currentColor" stroke-width="1"/><circle cx="70" cy="28" r="3" stroke="currentColor" stroke-width="1"/></svg></div>
+        <div class="product-card-content">
+          <div class="title-row">
+            <h3>Naga King Chilli Flakes</h3>
+            <span class="price">₹550</span>
+          </div>
+          <p class="desc">Sun-dried Bhut Jolokia, one of the hottest chillies grown in the region.</p>
+          <a class="btn-full" href="https://wa.me/916909424621?text=Hi%21%20I%27m%20interested%20in%20Naga%20King%20Chilli%20Flakes." target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="figure figure-frame linework"><svg viewBox="0 0 100 100" fill="none"><path d="M50 85 C 50 60 42 45 30 30" stroke="currentColor" stroke-width="1"/><path d="M50 85 C 50 60 58 45 70 30" stroke="currentColor" stroke-width="1"/><path d="M40 55 C 44 50 50 50 52 56" stroke="currentColor" stroke-width="1"/><path d="M58 45 C 62 40 68 40 70 46" stroke="currentColor" stroke-width="1"/><circle cx="30" cy="28" r="3" stroke="currentColor" stroke-width="1"/><circle cx="70" cy="28" r="3" stroke="currentColor" stroke-width="1"/></svg></div>
+        <div class="product-card-content">
+          <div class="title-row">
+            <h3>Sohra Ginger Powder</h3>
+            <span class="price">₹450</span>
+          </div>
+          <p class="desc">Sun-dried and stone-ground from ginger grown around Sohra.</p>
+          <a class="btn-full" href="https://wa.me/916909424621?text=Hi%21%20I%27m%20interested%20in%20Sohra%20Ginger%20Powder." target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="figure figure-frame linework"><svg viewBox="0 0 100 100" fill="none"><path d="M50 85 C 50 60 42 45 30 30" stroke="currentColor" stroke-width="1"/><path d="M50 85 C 50 60 58 45 70 30" stroke="currentColor" stroke-width="1"/><path d="M40 55 C 44 50 50 50 52 56" stroke="currentColor" stroke-width="1"/><path d="M58 45 C 62 40 68 40 70 46" stroke="currentColor" stroke-width="1"/><circle cx="30" cy="28" r="3" stroke="currentColor" stroke-width="1"/><circle cx="70" cy="28" r="3" stroke="currentColor" stroke-width="1"/></svg></div>
+        <div class="product-card-content">
+          <div class="title-row">
+            <h3>Khasi Hills Black Pepper</h3>
+            <span class="price">₹600</span>
+          </div>
+          <p class="desc">Hand-picked peppercorns, sun-dried on the vine.</p>
+          <a class="btn-full" href="https://wa.me/916909424621?text=Hi%21%20I%27m%20interested%20in%20Khasi%20Hills%20Black%20Pepper." target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="figure figure-frame linework"><svg viewBox="0 0 100 100" fill="none"><path d="M50 85 C 50 60 42 45 30 30" stroke="currentColor" stroke-width="1"/><path d="M50 85 C 50 60 58 45 70 30" stroke="currentColor" stroke-width="1"/><path d="M40 55 C 44 50 50 50 52 56" stroke="currentColor" stroke-width="1"/><path d="M58 45 C 62 40 68 40 70 46" stroke="currentColor" stroke-width="1"/><circle cx="30" cy="28" r="3" stroke="currentColor" stroke-width="1"/><circle cx="70" cy="28" r="3" stroke="currentColor" stroke-width="1"/></svg></div>
+        <div class="product-card-content">
+          <div class="title-row">
+            <h3>Wild Bay Leaf</h3>
+            <span class="price">₹300</span>
+          </div>
+          <p class="desc">Hand-picked tejpatta, air-dried to hold its aroma.</p>
+          <a class="btn-full" href="https://wa.me/916909424621?text=Hi%21%20I%27m%20interested%20in%20Wild%20Bay%20Leaf." target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="figure figure-frame linework"><svg viewBox="0 0 100 100" fill="none"><path d="M50 85 C 50 60 42 45 30 30" stroke="currentColor" stroke-width="1"/><path d="M50 85 C 50 60 58 45 70 30" stroke="currentColor" stroke-width="1"/><path d="M40 55 C 44 50 50 50 52 56" stroke="currentColor" stroke-width="1"/><path d="M58 45 C 62 40 68 40 70 46" stroke="currentColor" stroke-width="1"/><circle cx="30" cy="28" r="3" stroke="currentColor" stroke-width="1"/><circle cx="70" cy="28" r="3" stroke="currentColor" stroke-width="1"/></svg></div>
+        <div class="product-card-content">
+          <div class="title-row">
+            <h3>Wild Forest Cinnamon</h3>
+            <span class="price">₹500</span>
+          </div>
+          <p class="desc">True cinnamon bark, peeled and dried by hand.</p>
+          <a class="btn-full" href="https://wa.me/916909424621?text=Hi%21%20I%27m%20interested%20in%20Wild%20Forest%20Cinnamon." target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= SEEDS ================= -->
+  <div id="seeds">
+    <div class="cat-heading reveal">
+      <h2>Seeds &amp; Nuts</h2>
+      <span class="rule"></span>
+      <span class="count">7 Varieties</span>
+    </div>
+    <div class="product-grid reveal">
+
+      <div class="product-card">
+        <div class="figure figure-frame linework"><svg viewBox="0 0 100 100" fill="none"><ellipse cx="50" cy="50" rx="7" ry="11" stroke="currentColor" stroke-width="1"/><ellipse cx="34" cy="38" rx="6" ry="9" stroke="currentColor" stroke-width="1" transform="rotate(-30 34 38)"/><ellipse cx="66" cy="38" rx="6" ry="9" stroke="currentColor" stroke-width="1" transform="rotate(30 66 38)"/><ellipse cx="34" cy="64" rx="6" ry="9" stroke="currentColor" stroke-width="1" transform="rotate(30 34 64)"/><ellipse cx="66" cy="64" rx="6" ry="9" stroke="currentColor" stroke-width="1" transform="rotate(-30 66 64)"/></svg></div>
+        <div class="product-card-content">
+          <div class="title-row">
+            <h3>Perilla Seeds</h3>
+            <span class="price">₹500</span>
+          </div>
+          <p class="desc">Locally called Bhui Jaanth, roasted and used across Khasi cuisine.</p>
+          <a class="btn-full" href="https://wa.me/916909424621?text=Hi%21%20I%27m%20interested%20in%20Perilla%20Seeds." target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="figure figure-frame linework"><svg viewBox="0 0 100 100" fill="none"><ellipse cx="50" cy="50" rx="7" ry="11" stroke="currentColor" stroke-width="1"/><ellipse cx="34" cy="38" rx="6" ry="9" stroke="currentColor" stroke-width="1" transform="rotate(-30 34 38)"/><ellipse cx="66" cy="38" rx="6" ry="9" stroke="currentColor" stroke-width="1" transform="rotate(30 66 38)"/><ellipse cx="34" cy="64" rx="6" ry="9" stroke="currentColor" stroke-width="1" transform="rotate(30 34 64)"/><ellipse cx="66" cy="64" rx="6" ry="9" stroke="currentColor" stroke-width="1" transform="rotate(-30 66 64)"/></svg></div>
+        <div class="product-card-content">
+          <div class="title-row">
+            <h3>Black Sesame</h3>
+            <span class="price">₹350</span>
+          </div>
+          <p class="desc">Sun-dried and lightly toasted, whole and unhulled.</p>
+          <a class="btn-full" href="https://wa.me/916909424621?text=Hi%21%20I%27m%20interested%20in%20Black%20Sesame." target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="figure figure-frame linework"><svg viewBox="0 0 100 100" fill="none"><ellipse cx="50" cy="50" rx="7" ry="11" stroke="currentColor" stroke-width="1"/><ellipse cx="34" cy="38" rx="6" ry="9" stroke="currentColor" stroke-width="1" transform="rotate(-30 34 38)"/><ellipse cx="66" cy="38" rx="6" ry="9" stroke="currentColor" stroke-width="1" transform="rotate(30 66 38)"/><ellipse cx="34" cy="64" rx="6" ry="9" stroke="currentColor" stroke-width="1" transform="rotate(30 34 64)"/><ellipse cx="66" cy="64" rx="6" ry="9" stroke="currentColor" stroke-width="1" transform="rotate(-30 66 64)"/></svg></div>
+        <div class="product-card-content">
+          <div class="title-row">
+            <h3>Wild Forest Pumpkin Seeds</h3>
+            <span class="price">₹450</span>
+          </div>
+          <p class="desc">Hand-hulled and lightly roasted with a touch of rock salt.</p>
+          <a class="btn-full" href="https://wa.me/916909424621?text=Hi%21%20I%27m%20interested%20in%20Wild%20Forest%20Pumpkin%20Seeds." target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="figure figure-frame linework"><svg viewBox="0 0 100 100" fill="none"><ellipse cx="50" cy="50" rx="7" ry="11" stroke="currentColor" stroke-width="1"/><ellipse cx="34" cy="38" rx="6" ry="9" stroke="currentColor" stroke-width="1" transform="rotate(-30 34 38)"/><ellipse cx="66" cy="38" rx="6" ry="9" stroke="currentColor" stroke-width="1" transform="rotate(30 66 38)"/><ellipse cx="34" cy="64" rx="6" ry="9" stroke="currentColor" stroke-width="1" transform="rotate(30 34 64)"/><ellipse cx="66" cy="64" rx="6" ry="9" stroke="currentColor" stroke-width="1" transform="rotate(-30 66 64)"/></svg></div>
+        <div class="product-card-content">
+          <div class="title-row">
+            <h3>Roasted Hill Peanuts</h3>
+            <span class="price">₹300</span>
+          </div>
+          <p class="desc">Slow-roasted in small batches, skin-on for full flavour.</p>
+          <a class="btn-full" href="https://wa.me/916909424621?text=Hi%21%20I%27m%20interested%20in%20Roasted%20Hill%20Peanuts." target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= GRAINS ================= -->
+  <div id="grains">
+    <div class="cat-heading reveal">
+      <h2>Grains &amp; Rice</h2>
+      <span class="rule"></span>
+      <span class="count">8 Varieties</span>
+    </div>
+    <div class="product-grid reveal">
+
+      <div class="product-card">
+        <div class="figure figure-frame linework"><svg viewBox="0 0 100 100" fill="none"><path d="M50 90 V35" stroke="currentColor" stroke-width="1"/><path d="M50 35 C 46 30 46 24 50 18 C 54 24 54 30 50 35 Z" stroke="currentColor" stroke-width="1"/><path d="M50 45 C 44 42 40 36 41 30" stroke="currentColor" stroke-width="1"/><path d="M50 45 C 56 42 60 36 59 30" stroke="currentColor" stroke-width="1"/><path d="M50 58 C 44 55 40 49 41 43" stroke="currentColor" stroke-width="1"/><path d="M50 58 C 56 55 60 49 59 43" stroke="currentColor" stroke-width="1"/></svg></div>
+        <div class="product-card-content">
+          <div class="title-row">
+            <h3>Heirloom Red Rice</h3>
+            <span class="price">₹400</span>
+          </div>
+          <p class="desc">A native hill variety, nutty in flavour and higher in fibre.</p>
+          <a class="btn-full" href="https://wa.me/916909424621?text=Hi%21%20I%27m%20interested%20in%20Heirloom%20Red%20Rice." target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="figure figure-frame linework"><svg viewBox="0 0 100 100" fill="none"><path d="M50 90 V35" stroke="currentColor" stroke-width="1"/><path d="M50 35 C 46 30 46 24 50 18 C 54 24 54 30 50 35 Z" stroke="currentColor" stroke-width="1"/><path d="M50 45 C 44 42 40 36 41 30" stroke="currentColor" stroke-width="1"/><path d="M50 45 C 56 42 60 36 59 30" stroke="currentColor" stroke-width="1"/><path d="M50 58 C 44 55 40 49 41 43" stroke="currentColor" stroke-width="1"/><path d="M50 58 C 56 55 60 49 59 43" stroke="currentColor" stroke-width="1"/></svg></div>
+        <div class="product-card-content">
+          <div class="title-row">
+            <h3>Foxtail Millet</h3>
+            <span class="price">₹350</span>
+          </div>
+          <p class="desc">Rain-fed and free of synthetic fertiliser, milled fresh to order.</p>
+          <a class="btn-full" href="https://wa.me/916909424621?text=Hi%21%20I%27m%20interested%20in%20Foxtail%20Millet." target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="figure figure-frame linework"><svg viewBox="0 0 100 100" fill="none"><path d="M50 90 V35" stroke="currentColor" stroke-width="1"/><path d="M50 35 C 46 30 46 24 50 18 C 54 24 54 30 50 35 Z" stroke="currentColor" stroke-width="1"/><path d="M50 45 C 44 42 40 36 41 30" stroke="currentColor" stroke-width="1"/><path d="M50 45 C 56 42 60 36 59 30" stroke="currentColor" stroke-width="1"/><path d="M50 58 C 44 55 40 49 41 43" stroke="currentColor" stroke-width="1"/><path d="M50 58 C 56 55 60 49 59 43" stroke="currentColor" stroke-width="1"/></svg></div>
+        <div class="product-card-content">
+          <div class="title-row">
+            <h3>Job's Tears (Adlay)</h3>
+            <span class="price">₹450</span>
+          </div>
+          <p class="desc">An ancient hill grain, mild and versatile, hulled by hand.</p>
+          <a class="btn-full" href="https://wa.me/916909424621?text=Hi%21%20I%27m%20interested%20in%20Job%27s%20Tears%20%28Adlay%29." target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="figure figure-frame linework"><svg viewBox="0 0 100 100" fill="none"><path d="M50 90 V35" stroke="currentColor" stroke-width="1"/><path d="M50 35 C 46 30 46 24 50 18 C 54 24 54 30 50 35 Z" stroke="currentColor" stroke-width="1"/><path d="M50 45 C 44 42 40 36 41 30" stroke="currentColor" stroke-width="1"/><path d="M50 45 C 56 42 60 36 59 30" stroke="currentColor" stroke-width="1"/><path d="M50 58 C 44 55 40 49 41 43" stroke="currentColor" stroke-width="1"/><path d="M50 58 C 56 55 60 49 59 43" stroke="currentColor" stroke-width="1"/></svg></div>
+        <div class="product-card-content">
+          <div class="title-row">
+            <h3>Sticky Black Rice</h3>
+            <span class="price">₹500</span>
+          </div>
+          <p class="desc">Deep purple-black grain, traditionally kept for festival cooking.</p>
+          <a class="btn-full" href="https://wa.me/916909424621?text=Hi%21%20I%27m%20interested%20in%20Sticky%20Black%20Rice." target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= GIFT SETS ================= -->
+  <div id="gifting">
+    <div class="cat-heading reveal">
+      <h2>Curated Gift Sets</h2>
+      <span class="rule"></span>
+      <span class="count">Boxed for Gifting</span>
+    </div>
+    <div class="product-grid reveal">
+
+      <div class="product-card">
+        <div class="figure figure-frame linework"><svg viewBox="0 0 100 100" fill="none"><rect x="24" y="20" width="52" height="60" rx="1" stroke="currentColor" stroke-width="1"/><path d="M24 38 H76" stroke="currentColor" stroke-width="1"/></svg></div>
+        <div class="product-card-content">
+          <div class="title-row">
+            <h3>Wild Gold Collection Box</h3>
+            <span class="price">On request</span>
+          </div>
+          <p class="desc">A hand-arranged assortment of honey, spice, and grain, boxed for gifting.</p>
+          <a class="btn-full" href="https://wa.me/916909424621?text=Hi%21%20I%27m%20interested%20in%20the%20Wild%20Gold%20Collection%20Box." target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="figure figure-frame linework"><svg viewBox="0 0 100 100" fill="none"><rect x="24" y="20" width="52" height="60" rx="1" stroke="currentColor" stroke-width="1"/><path d="M50 20 V80 M24 50 H76" stroke="currentColor" stroke-width="1"/></svg></div>
+        <div class="product-card-content">
+          <div class="title-row">
+            <h3>Premium Double Grace Box</h3>
+            <span class="price">On request</span>
+          </div>
+          <p class="desc">Two of our finest categories, paired together in a single elegant box.</p>
+          <a class="btn-full" href="https://wa.me/916909424621?text=Hi%21%20I%27m%20interested%20in%20the%20Premium%20Double%20Grace%20Box." target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="figure figure-frame linework"><svg viewBox="0 0 100 100" fill="none"><rect x="30" y="24" width="40" height="52" rx="1" stroke="currentColor" stroke-width="1"/><rect x="42" y="42" width="16" height="16" stroke="currentColor" stroke-width="1"/></svg></div>
+        <div class="product-card-content">
+          <div class="title-row">
+            <h3>VIP Elite Reserve Lock Box</h3>
+            <span class="price">On request</span>
+          </div>
+          <p class="desc">Our most exclusive gift set, holding a hand-picked reserve from every category.</p>
+          <a class="btn-full" href="https://wa.me/916909424621?text=Hi%21%20I%27m%20interested%20in%20the%20VIP%20Elite%20Reserve%20Lock%20Box." target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- ================= CTA ================= -->
+<section class="section bg-forest" style="margin-top:100px;">
+  <div class="wrap" style="text-align:center;">
+    <span class="eyebrow reveal">Can't Decide?</span>
+    <h2 class="reveal" style="font-size:var(--fs-h2); margin-top:16px;">Tell Us What You're Looking For.</h2>
+    <p class="lede reveal ink-45" style="margin:18px auto 40px; max-width:44ch;">Send us a message and we'll help you put together the right order — whether it's for your kitchen or as a gift.</p>
+    <a href="https://wa.me/916909424621?text=Hi%21%20I%27d%20like%20some%20help%20choosing%20products%20from%20Meghyra." target="_blank" rel="noopener" class="btn btn-line-light reveal">Message Us on WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="wordmark"><span class="word">MEGHYRA</span><span class="dot"></span></span>
+        <p>Raw luxury from the North East — pure ingredients, honestly kept.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="./products.html">Products</a>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <a href="./products.html#honey">Honey</a>
+        <a href="./products.html#spices">Spices &amp; Herbs</a>
+        <a href="./products.html#seeds">Seeds &amp; Nuts</a>
+        <a href="./products.html#grains">Grains &amp; Rice</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="https://wa.me/916909424621" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/meghyra_" target="_blank" rel="noopener">Instagram</a>
+        <a href="./contact.html">Get in Touch</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Meghyra © 2026. Crafted in the hills of Meghalaya.</span>
+      <span>All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/916909424621?text=Hi%21%20I%27d%20like%20to%20know%20more%20about%20Meghyra." target="_blank" rel="noopener" class="float-order">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18a7.9 7.9 0 01-4.03-1.1l-.29-.17-2.99.79.8-2.92-.19-.3A7.93 7.93 0 014 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/></svg>
+  <span>Order on WhatsApp</span>
+</a>
+
+<script src="./script.js"></script>
+</body>
+</html>
