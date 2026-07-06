@@ -15,9 +15,9 @@
   --line:    rgba(21,19,14,.09);
   --line-strong: rgba(21,19,14,.16);
 
-  --brass:      #d4af37;
-  --brass-deep: #b08d25;
-  --brass-soft: rgba(212,175,55,.2);
+  --brass:      #FBCC13;
+  --brass-deep: #d4a905;
+  --brass-soft: rgba(251,204,19,.2);
 
   --forest:      #1c2417;
   --forest-2:    #262f1f;
@@ -52,9 +52,9 @@
   --line:    rgba(248,245,238,.12);
   --line-strong: rgba(248,245,238,.25);
 
-  --brass:      #d4af37;
-  --brass-deep: #b08d25;
-  --brass-soft: rgba(212,175,55,.2);
+  --brass:      #FBCC13;
+  --brass-deep: #d4a905;
+  --brass-soft: rgba(251,204,19,.2);
 
   --forest:      #050505;
   --forest-2:    #0a0a0a;
@@ -190,7 +190,7 @@ h1,h2,h3{ font-family:var(--serif); font-weight:400; margin:0; letter-spacing:-.
   transform:translateY(-100%); transition:transform .5s var(--ease);
 }
 .mobile-drawer.open{ transform:translateY(0); }
-.mobile-drawer a{ font-family:var(--serif); font-size:34px; padding:12px 0; border-bottom:1px solid var(--line); }
+.mobile-drawer a{ font-family:var(--serif); font-size:24px; padding:12px 0; border-bottom:1px solid var(--line); }
 .mobile-drawer .close{ position:absolute; top:26px; right:36px; font-size:12px; letter-spacing:.14em; text-transform:uppercase; }
 
 /* ---------- Sections ---------- */
@@ -247,7 +247,7 @@ h1,h2,h3{ font-family:var(--serif); font-weight:400; margin:0; letter-spacing:-.
 
 /* category jump nav on products page */
 .cat-nav{
-  display:flex; gap:8px; flex-wrap:wrap; padding:16px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+  display:flex; gap:12px; flex-wrap:wrap; padding:24px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line);
   position:sticky; top:66px; background:var(--paper); z-index:80;
 }
 .cat-nav a{
@@ -264,7 +264,7 @@ h1,h2,h3{ font-family:var(--serif); font-weight:400; margin:0; letter-spacing:-.
 .stat-row{ display:flex; gap:0; flex-wrap:wrap; }
 .stat{ padding:0 40px 0 0; margin-right:40px; border-right:1px solid var(--line); }
 .stat:last-child{ border-right:none; }
-.stat b{ display:block; font-family:var(--serif); font-size:clamp(2rem,4vw,3rem); font-weight:400; }
+.stat b{ display:block; font-family:var(--serif); font-size:clamp(1.6rem, 3.5vw, 2.4rem); font-weight:400; }
 .stat span{ font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-45); }
 
 /* ---------- Founders ---------- */
@@ -332,6 +332,7 @@ footer{ background:var(--forest); color:rgba(244,239,226,.62); padding:70px 0 28
 /* ---------- Responsive ---------- */
 @media (max-width:900px){
   .nav-links{ display:none; }
+  .nav-right .btn-solid { display:none; }
   .burger{ display:flex; }
   .founder-grid{ grid-template-columns:1fr; }
 }
