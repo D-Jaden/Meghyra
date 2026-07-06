@@ -95,10 +95,10 @@ button{ font:inherit; cursor:pointer; background:none; border:none; color:inheri
 ::selection{ background:var(--brass-soft); color:var(--ink); }
 
 /* ---------- Type ---------- */
-h1,h2,h3{ font-family:var(--serif); font-weight:400; margin:0; letter-spacing:-.01em; }
+h1,h2,h3,h4{ font-family:var(--serif); font-weight:700; margin:0; letter-spacing:-.01em; }
 .eyebrow{
   font-family:var(--sans); font-size:11px; font-weight:600; letter-spacing:.18em; text-transform:uppercase;
-  color:var(--brass-deep); display:inline-block;
+  color:var(--brass-deep); display:inline-block; white-space:nowrap;
 }
 .lede{
   font-family:var(--serif); font-style:italic; font-weight:400; color:var(--ink-70);
@@ -124,8 +124,8 @@ h1,h2,h3{ font-family:var(--serif); font-weight:400; margin:0; letter-spacing:-.
   white-space:nowrap;
 }
 .btn:active{ transform:scale(.98); }
-.btn-solid{ background:var(--brass); color:#fff !important; }
-.btn-solid:hover{ background:var(--brass-deep); color:#fff !important; }
+.btn-solid{ background:var(--brass); color:#15130e !important; font-weight:700; }
+.btn-solid:hover{ background:var(--brass-deep); color:#15130e !important; }
 .btn-line{ border:1px solid var(--brass); color:var(--brass); }
 .btn-line:hover{ background:var(--brass); color:var(--paper); border-color:var(--brass); }
 .btn-line-light{ border:1px solid rgba(248,245,238,.4); color:var(--on-forest); }
@@ -196,7 +196,7 @@ h1,h2,h3{ font-family:var(--serif); font-weight:400; margin:0; letter-spacing:-.
 /* ---------- Sections ---------- */
 .section{ padding:120px 0; }
 .section-tight{ padding:80px 0; }
-.bg-tint{ background:var(--paper-2); }
+.bg-tint{ background:var(--paper-2); color:var(--ink); font-weight:500; }
 .bg-forest{ background:var(--forest); color:var(--on-forest); }
 .bg-forest .eyebrow{ color:var(--brass); opacity:.85; }
 .bg-forest .ink-45{ color:rgba(244,239,226,.6); }
@@ -260,11 +260,10 @@ h1,h2,h3{ font-family:var(--serif); font-weight:400; margin:0; letter-spacing:-.
 .cat-heading .count{ font-size:11.5px; color:var(--ink-45); letter-spacing:.08em; text-transform:uppercase; }
 .cat-heading .rule{ flex:1; }
 
-/* ---------- Stat row ---------- */
 .stat-row{ display:flex; gap:0; flex-wrap:wrap; }
 .stat{ padding:0 40px 0 0; margin-right:40px; border-right:1px solid var(--line); }
 .stat:last-child{ border-right:none; }
-.stat b{ display:block; font-family:var(--serif); font-size:clamp(1.6rem, 3.5vw, 2.4rem); font-weight:400; }
+.stat b{ display:block; font-family:var(--serif); font-size:clamp(1.6rem, 3.5vw, 2.4rem); font-weight:700; }
 .stat span{ font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-45); }
 
 /* ---------- Founders ---------- */
@@ -322,7 +321,7 @@ footer{ background:var(--forest); color:rgba(244,239,226,.62); padding:70px 0 28
 .footer-top{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:40px; padding-bottom:50px; border-bottom:1px solid rgba(244,239,226,.14); }
 .footer-brand .word{ color:var(--on-forest); }
 .footer-brand p{ font-family:var(--serif); font-style:italic; font-size:15px; margin-top:16px; max-width:32ch; color:rgba(244,239,226,.55); }
-.footer-col h4{ font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:rgba(244,239,226,.4); margin-bottom:16px; }
+.footer-col h4{ font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--brass); margin-bottom:16px; }
 .footer-col a{ display:block; font-size:13.5px; padding:6px 0; color:rgba(244,239,226,.75); transition:color .2s; }
 .footer-col a:hover{ color:var(--brass); }
 .footer-bottom{ display:flex; justify-content:space-between; padding-top:22px; font-size:11px; color:rgba(244,239,226,.35); flex-wrap:wrap; gap:10px; }
@@ -335,6 +334,13 @@ footer{ background:var(--forest); color:rgba(244,239,226,.62); padding:70px 0 28
   .nav-right .btn-solid { display:none; }
   .burger{ display:flex; }
   .founder-grid{ grid-template-columns:1fr; }
+}
+@media (max-width:860px){
+  .story-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+}
+@media (max-width:640px){
+  .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .stat { padding: 0; margin: 0; border: none; }
 }
 @media (max-width:760px){
   .wrap,.wrap-wide{ padding:0 24px; }
