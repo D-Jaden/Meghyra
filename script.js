@@ -18,13 +18,38 @@ if (burger && drawer) {
   drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
 }
 
-// ---------- Reveal on scroll ----------
-const revealIO = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('in'); revealIO.unobserve(e.target); }
-  });
-}, { threshold: 0.14 });
-document.querySelectorAll('.reveal').forEach(el => revealIO.observe(el));
+// ---------- Loader & Reveal on scroll ----------
+function startReveal() {
+  const revealIO = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); revealIO.unobserve(e.target); }
+    });
+  }, { threshold: 0.14 });
+  document.querySelectorAll('.reveal').forEach(el => revealIO.observe(el));
+}
+
+const loader = document.getElementById('site-loader');
+if (loader) {
+
+  const texts = [
+    "Honey is being cultivated...",
+    "Stone-grinding the Lakadong turmeric...",
+    "Sourcing raw ingredients...",
+    "Journeying from the hills...",
+    "Gathering heirloom seeds..."
+  ];
+  const textEl = document.getElementById('loader-text');
+  if (textEl) {
+    textEl.textContent = texts[Math.floor(Math.random() * texts.length)];
+  }
+
+  setTimeout(() => {
+    loader.classList.add('slide-up');
+    setTimeout(startReveal, 400); // Start revealing as the curtain opens
+  }, 2900);
+} else {
+  startReveal();
+}
 
 // ---------- Linework draw-in ----------
 function prepDraw(svg) {
