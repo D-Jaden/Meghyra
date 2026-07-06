@@ -107,6 +107,8 @@ h1,h2,h3,h4{ font-family:var(--serif); font-weight:700; margin:0; letter-spacing
 .rule{ width:38px; height:1px; background:var(--line-strong); display:block; }
 .center{ text-align:center; margin-left:auto; margin-right:auto; }
 .script-font{ font-family:var(--script); font-weight:400; font-style:normal; font-size:1.15em; }
+.variety-text{ font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink); font-weight:700; }
+[data-theme="dark"] .variety-text { color: var(--brass); }
 
 /* ---------- Reveal / draw-in ---------- */
 .reveal{ opacity:0; transform:translateY(18px); transition:opacity .9s var(--ease), transform .9s var(--ease); }
@@ -119,13 +121,15 @@ h1,h2,h3,h4{ font-family:var(--serif); font-weight:700; margin:0; letter-spacing
 /* ---------- Buttons ---------- */
 .btn{
   display:inline-flex; align-items:center; gap:10px; font-size:11.5px; font-weight:600;
-  letter-spacing:.14em; text-transform:uppercase; padding:16px 30px; border-radius:2px;
+  letter-spacing:.14em; text-transform:uppercase; padding:16px 30px; border-radius:8px;
   transition:background .3s var(--ease-soft), color .3s var(--ease-soft), border-color .3s var(--ease-soft), transform .3s var(--ease-soft);
   white-space:nowrap;
 }
 .btn:active{ transform:scale(.98); }
 .btn-solid{ background:var(--brass); color:#15130e !important; font-weight:700; }
 .btn-solid:hover{ background:var(--brass-deep); color:#15130e !important; }
+[data-theme="dark"] .btn-solid { color:#fff !important; }
+[data-theme="dark"] .btn-solid:hover { color:#fff !important; }
 .btn-line{ border:1px solid var(--brass); color:var(--brass); }
 .btn-line:hover{ background:var(--brass); color:var(--paper); border-color:var(--brass); }
 .btn-line-light{ border:1px solid rgba(248,245,238,.4); color:var(--on-forest); }
