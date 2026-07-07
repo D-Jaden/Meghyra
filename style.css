@@ -253,8 +253,8 @@ h1,h2,h3,h4{ font-family:var(--serif); font-weight:700; margin:0; letter-spacing
 }
 
 /* category jump nav on products page */
-.cat-nav{
-  display:flex; gap:12px; row-gap:16px; flex-wrap:wrap; padding:24px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+nav.cat-nav{
+  display:flex; gap:12px; row-gap:16px; flex-wrap:wrap; padding-top:24px; padding-bottom:24px; border-top:1px solid var(--line); border-bottom:1px solid var(--line);
   position:sticky; top:66px; background:var(--paper); z-index:80; align-items:center;
 }
 .cat-nav a{
@@ -264,19 +264,17 @@ h1,h2,h3,h4{ font-family:var(--serif); font-weight:700; margin:0; letter-spacing
 .cat-nav a:hover, .cat-nav a.active{ background:var(--ink); color:var(--paper); border-color:var(--ink); }
 
 @media (max-width:640px){
-  .cat-nav {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* Firefox */
-    padding: 16px 0; /* slightly reduce padding on mobile */
-  }
-  .cat-nav::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
+  nav.cat-nav {
+    flex-wrap: wrap;
+    gap: 8px;
+    row-gap: 12px;
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+    justify-content: center;
   }
   .cat-nav a {
-    white-space: nowrap;
-    flex-shrink: 0;
+    font-size: 10px;
+    padding: 6px 12px;
   }
 }
 
