@@ -82,26 +82,63 @@
       <span class="eyebrow">From Hill to Table</span>
       <h2>How Every Jar Gets to You</h2>
     </div>
-    <div class="process reveal">
-      <div class="process-step">
-        <span class="n">01</span>
-        <h3>Harvested</h3>
-        <p>Gathered in small batches by partner farms, timed to the season rather than a schedule.</p>
+    <div class="roadmap-container reveal">
+      <!-- Desktop SVG -->
+      <svg class="roadmap-svg svg-desktop" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path class="roadmap-track" d="M50,0 C50,12.5 30,12.5 30,25 C30,37.5 70,37.5 70,50 C70,62.5 30,62.5 30,75 C30,85 50,85 50,95" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2 2" opacity="0.3"></path>
+        <path class="roadmap-path desktop-path" d="M50,0 C50,12.5 30,12.5 30,25 C30,37.5 70,37.5 70,50 C70,62.5 30,62.5 30,75 C30,85 50,85 50,95" fill="none" stroke="#FBCC13" stroke-width="1.5"></path>
+      </svg>
+      <!-- Mobile SVG -->
+      <svg class="roadmap-svg svg-mobile" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path class="roadmap-track" d="M25,0 C25,12.5 15,12.5 15,25 C15,37.5 35,37.5 35,50 C35,62.5 15,62.5 15,75 C15,85 25,85 25,95" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2 2" opacity="0.3"></path>
+        <path class="roadmap-path mobile-path" d="M25,0 C25,12.5 15,12.5 15,25 C15,37.5 35,37.5 35,50 C35,62.5 15,62.5 15,75 C15,85 25,85 25,95" fill="none" stroke="#FBCC13" stroke-width="1.5"></path>
+      </svg>
+      
+      <!-- The Bee -->
+      <div id="flying-bee" style="position: absolute; width: 36px; height: 36px; margin-left: -18px; margin-top: -18px; z-index: 5; pointer-events: none; opacity: 0; transition: opacity 0.3s;">
+        <svg viewBox="0 0 24 24" fill="none" style="width: 100%; height: 100%; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">
+          <ellipse cx="10" cy="12" rx="7" ry="5" fill="#FBCC13" />
+          <circle cx="18" cy="12" r="4" fill="#15130e" />
+          <path d="M 7,8 L 7,16 M 11,7.5 L 11,16.5" stroke="#15130e" stroke-width="2" />
+          <path d="M 9,9 C 6,0 16,0 12,8" fill="rgba(248,245,238,0.9)" stroke="#15130e" stroke-width="0.5"/>
+          <path d="M 9,15 C 6,24 16,24 12,16" fill="rgba(248,245,238,0.9)" stroke="#15130e" stroke-width="0.5"/>
+        </svg>
       </div>
-      <div class="process-step">
-        <span class="n">02</span>
-        <h3>Hand-Sorted</h3>
-        <p>Every batch is checked by hand for quality before it moves any further.</p>
+
+      <div class="roadmap-node node-1" data-step="1">
+        <div class="node-number">01</div>
+        <div class="node-dot"></div>
+        <div class="node-content">
+          <h3>Harvested</h3>
+          <p>Gathered in small batches by partner farms, timed to the season rather than a schedule.</p>
+        </div>
       </div>
-      <div class="process-step">
-        <span class="n">03</span>
-        <h3>Traditionally Prepared</h3>
-        <p>Stone-ground, sun-dried, or left raw — whichever method the ingredient has always called for.</p>
+      
+      <div class="roadmap-node node-2" data-step="2">
+        <div class="node-number">02</div>
+        <div class="node-dot"></div>
+        <div class="node-content">
+          <h3>Hand-Sorted</h3>
+          <p>Every batch is checked by hand for quality before it moves any further.</p>
+        </div>
       </div>
-      <div class="process-step">
-        <span class="n">04</span>
-        <h3>Delivered</h3>
-        <p>Packed and shipped pan-India, from our hills directly to your door.</p>
+      
+      <div class="roadmap-node node-3" data-step="3">
+        <div class="node-number">03</div>
+        <div class="node-dot"></div>
+        <div class="node-content">
+          <h3>Traditionally Prepared</h3>
+          <p>Stone-ground, sun-dried, or left raw — whichever method the ingredient has always called for.</p>
+        </div>
+      </div>
+      
+      <div class="roadmap-node node-4" data-step="4">
+        <div class="node-number">04</div>
+        <div class="node-dot"></div>
+        <div class="node-content">
+          <h3>Delivered</h3>
+          <p>Packed and shipped pan-India, from our hills directly to your door.</p>
+        </div>
       </div>
     </div>
   </div>

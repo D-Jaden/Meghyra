@@ -104,3 +104,88 @@ if (themeToggleBtn) {
     }
   });
 }
+
+// ---------- Animated Roadmap ----------
+const roadmapContainer = document.querySelector('.roadmap-container');
+const desktopPath = document.querySelector('.desktop-path');
+const mobilePath = document.querySelector('.mobile-path');
+const roadmapNodes = document.querySelectorAll('.roadmap-node');
+const bee = document.getElementById('flying-bee');
+
+if (roadmapContainer && desktopPath && mobilePath) {
+  // Prep both paths
+  const desktopLen = desktopPath.getTotalLength();
+  desktopPath.style.strokeDasharray = desktopLen;
+  desktopPath.style.strokeDashoffset = desktopLen;
+
+  const mobileLen = mobilePath.getTotalLength();
+  mobilePath.style.strokeDasharray = mobileLen;
+  mobilePath.style.strokeDashoffset = mobileLen;
+
+  const updateRoadmap = () => {
+    const isMobile = window.innerWidth <= 640;
+    const activePath = isMobile ? mobilePath : desktopPath;
+    const activeLen = isMobile ? mobileLen : desktopLen;
+    
+    // Ensure the inactive path is hidden
+    const inactivePath = isMobile ? desktopPath : mobilePath;
+    inactivePath.style.strokeDashoffset = isMobile ? desktopLen : mobileLen;
+
+    const rect = roadmapContainer.getBoundingClientRect();
+    const scrollPercent = (window.innerHeight * 0.8 - rect.top) / (rect.height * 0.8);
+    const clamped = Math.min(Math.max(scrollPercent, 0), 1);
+    
+    // Draw the path
+    const drawLength = activeLen * clamped;
+    activePath.style.strokeDashoffset = activeLen - drawLength;
+    
+    // Move the bee
+    if (bee) {
+      if (clamped > 0 && clamped < 1) {
+        bee.style.opacity = 1;
+        const point = activePath.getPointAtLength(drawLength);
+        
+        // Calculate rotation by looking slightly ahead
+        let angle = 90; // default facing down
+        if (drawLength + 1 < activeLen) {
+          const nextPoint = activePath.getPointAtLength(drawLength + 1);
+          // atan2(dy, dx) returns radians.
+          // Note: coordinates are 0-100 in viewBox. dy is positive downwards.
+          angle = Math.atan2(nextPoint.y - point.y, nextPoint.x - point.x) * (180 / Math.PI);
+        }
+        
+        bee.style.left = point.x + '%';
+        bee.style.top = point.y + '%';
+        // Add 90 degrees because our bee SVG is drawn facing right (0 deg)
+        // Wait, if atan2 returns 0 for (1,0) which is right, and bee is facing right, no addition needed!
+        bee.style.transform = `rotate(${angle}deg)`;
+      } else {
+        bee.style.opacity = 0;
+      }
+    }
+    
+    // Activate nodes based on their Y position relative to the scroll progress
+    roadmapNodes.forEach(node => {
+      const topStr = node.style.top || getComputedStyle(node).top;
+      if (topStr) {
+        // If computed style is px, we need percentage.
+        // It's safer to use the dataset step.
+        // Nodes are at 25%, 50%, 75%, 95%
+        const step = parseInt(node.getAttribute('data-step'));
+        const percents = {1: 0.25, 2: 0.50, 3: 0.75, 4: 0.95};
+        const topPercent = percents[step];
+        
+        if (clamped >= topPercent - 0.05) {
+          node.classList.add('active');
+        } else {
+          node.classList.remove('active');
+        }
+      }
+    });
+  };
+
+  window.addEventListener('scroll', updateRoadmap);
+  window.addEventListener('resize', updateRoadmap);
+  // initial check
+  updateRoadmap();
+}
