@@ -435,27 +435,28 @@ nav.cat-nav{
   
   /* Mobile positions */
   .node-1 { left: 15%; top: 25%; }
-  .node-2 { left: 35%; top: 50%; }
+  .node-2 { left: 25%; top: 50%; }
   .node-3 { left: 15%; top: 75%; }
-  .node-4 { left: 25%; top: 95%; }
+  .node-4 { left: 20%; top: 95%; }
 
   /* All text to the right on mobile */
   .roadmap-node .node-content { 
-    left: 32px; right: auto; top: auto; 
+    left: 48px; right: auto; top: auto; 
     transform: none; text-align: left; 
     width: 220px; padding: 0 16px; 
   }
   /* All numbers to the left on mobile */
   .roadmap-node .node-number {
-    right: 40px; left: auto; top: auto; bottom: auto; transform: none;
+    right: 50px; left: auto; top: auto; bottom: auto; transform: none;
+    font-size: 2.25rem;
   }
 }
 @media (max-width: 520px) {
   .roadmap-container { height: 600px; }
-  .roadmap-node .node-content { width: 170px; padding: 0 12px; }
-  .node-content h3 { font-size: 1.1rem; }
-  .node-content p { font-size: 12px; }
-  .node-number { font-size: 1.8rem; right: 24px; }
+  .roadmap-node .node-content { width: 180px; padding: 0; left: 40px; }
+  .node-content h3 { font-size: 1.15rem; }
+  .node-content p { font-size: 12.5px; }
+  .roadmap-node .node-number { font-size: 2rem; right: 35px; }
 }
 
 /* ---------- Testimonial ---------- */
